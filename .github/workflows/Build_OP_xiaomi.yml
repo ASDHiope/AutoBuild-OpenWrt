@@ -17,12 +17,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-    - name: Setup Debug Session
-      uses: P3TERX/debugger-action@master  
+    
     steps:
     - name: Checkout
       uses: actions/checkout@master
+      
+    - name: Setup Debug Session
+      uses: P3TERX/debugger-action@master  
 
     - name: Initialization environment
       env:
